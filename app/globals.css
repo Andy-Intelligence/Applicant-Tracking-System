@@ -27,4 +27,5 @@ html{
 .floater{
     padding: 2rem 2rem;
     background-color: rgba(160, 161, 160, 0.355);
+    width: 50%;
 }
