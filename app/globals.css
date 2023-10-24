@@ -3,3 +3,28 @@
 @tailwind utilities;
 
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 1440px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    max-width: 50%;
+}
+
+.floater{
+    padding: 2rem 2rem;
+    background-color: rgba(160, 161, 160, 0.355);
+}
