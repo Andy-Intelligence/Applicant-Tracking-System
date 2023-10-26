@@ -32,7 +32,7 @@ const SignIn = () => {
           quality={100}
           width={20}
         />
-        <p>Sign Up with Google</p>
+        <p>Sign Up with facebook</p>
       </button>
     </>
   );
