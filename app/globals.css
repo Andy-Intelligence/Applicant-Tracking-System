@@ -45,6 +45,27 @@ html {
   margin-top: -5rem;
 }
 
+.company {
+  position: absolute;
+  top: 7rem;
+  left: 50rem;
+}
+
+.company h1{
+  color: var(--Buttion-color, #3637ee);
+}
+
+.company h2{
+  color: #000;
+  margin-left: 6.7rem;
+  font-size: 1.5rem;
+  margin-left: -2rem;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; 
+}
+
 .signin h2 {
   color: #000;
   margin-left: 6.7rem;
@@ -94,4 +115,24 @@ html {
 .link{
     color:var(--Buttion-color, #3637EE);
     text-decoration:underline;
+}
+
+form{
+  max-width: 50%;
+  box-sizing: border-box;
+  margin-left: 41rem;
+  margin-top: -32rem;
+  padding: 3rem;
+}
+
+input{
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem 2rem;
+  outline: none;
+  background-color:#ededed;
+}
+
+input[type="submit"]{
+  background-color:var(--Buttion-color, #3637EE) ;
 }

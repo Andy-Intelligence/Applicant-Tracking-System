@@ -3,6 +3,7 @@ import Image from "next/image";
 import Google from "../images/continue-with-google-centre-google-logo.svg";
 import Facebook from "../images/continue-with-facebook-centre-facebook-logo.svg";
 import { UserAuth, } from "../context/AuthContext";
+
 const SignIn = () => {
     const { user, googleSignIn, logOut } = UserAuth();
 
@@ -13,7 +14,23 @@ const SignIn = () => {
       console.log(error);
     }
   
-  }
+  };
+
+  // const handleSignOut = async () => {
+  //   try {
+  //     await logOut()
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+  {!user ? (
+    console.log("Sign in failed")
+  ) : (
+      console.log(user.displayName)
+      
+    // <button onClick={handleSignOut}>Sign out</button>
+  )}
+  
   return (
     <>
       <button onClick={handleSignIn} className="google">
