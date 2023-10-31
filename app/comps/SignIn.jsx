@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Google from "../images/continue-with-google-centre-google-logo.svg";
-import Facebook from "../images/continue-with-facebook-centre-facebook-logo.svg";
 import { UserAuth, } from "../context/AuthContext";
 import { useState } from "react";
 import {useEffect} from 'react';
@@ -17,14 +16,11 @@ const SignIn = () => {
     } catch (error) {
       console.log(error);
     }
-
-    
-  
   };
   {!user ? (
-    console.log('failed')
+    router.push('/SignUp')
   ) : (
-      console.log(user.displayName)
+    router.push('/Login')
   )}
   
   return (
