@@ -1,8 +1,9 @@
+import Navbar from '../app/comps/Nav'
 const Page = () => {
   return (
     <>
     <div>
-      homepage
+      <Navbar />
     </div>
     </>
   );

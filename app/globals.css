@@ -15,6 +15,21 @@ html {
   background: var(--BACKGROUND, #F8F8F8);
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+}
+
 .img {
   position: relative;
   bottom: 0;
@@ -135,4 +150,8 @@ input{
 
 input[type="submit"]{
   background-color:var(--Buttion-color, #3637EE) ;
+}
+
+input[type="search"]{
+  width:40%;
 }
