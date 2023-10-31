@@ -13,28 +13,18 @@ const SignIn = () => {
   const handleSignIn = async () => {
     try {
       await googleSignIn();
+      
     } catch (error) {
       console.log(error);
     }
 
-    setTimeout(() => {
-      router.push('/Login')
-    },10000)
+    
   
   };
-
-  // const handleSignOut = async () => {
-  //   try {
-  //     await logOut()
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
   {!user ? (
-    console.log("Sign in failed")
+    console.log('failed')
   ) : (
       console.log(user.displayName)
-    // <button onClick={handleSignOut}>Sign out</button>
   )}
   
   return (
