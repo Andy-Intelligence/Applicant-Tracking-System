@@ -19,7 +19,7 @@ const SignIn = () => {
 
     setTimeout(() => {
       router.push('/Login')
-    },7000)
+    },10000)
   
   };
 
