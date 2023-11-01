@@ -25,11 +25,9 @@ main{
   padding: 0;
 }
 
-header{
-  margin: 0;
-  padding: 0;
+header {
+  position: relative;
 }
-
 .img {
   position: relative;
   bottom: 0;
@@ -153,5 +151,33 @@ input[type="submit"]{
 }
 
 input[type="search"]{
-  width:40%;
+  width:45%;
+}
+
+input[type="search"]::placeholder{
+  margin-left: 3rem;
+}
+
+.main-image{
+  position: absolute;
+  left: 57em;
+  top: 1.6rem;
+  transform: translateY(-5%);
+}
+
+.shift{
+  left:75rem;
+  top: 2rem;
+}
+
+.button{
+  padding: .6rem 3rem;
+  position: absolute;
+  left: 68rem;
+  top: 1.2rem;
+  color:var(--Buttion-color, #3637EE) ;
+  border: 1px solid #3637EE;
+  box-shadow: inset -3px -3px 3px rgb(216, 216, 216);
+  border-radius: .5rem;
+  color:#dfdddd;
 }

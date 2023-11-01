@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Google from "../images/continue-with-google-centre-google-logo.svg";
-import { UserAuth, } from "../context/AuthContext";
+import { UserAuth } from "../context/AuthContext";
 import { useState } from "react";
 import {useEffect} from 'react';
 import { useRouter } from "next/navigation";
@@ -20,6 +20,7 @@ const SignIn = () => {
   {!user ? (
     router.push('/SignUp')
   ) : (
+    console.log(user),
     router.push('/Login')
   )}
   

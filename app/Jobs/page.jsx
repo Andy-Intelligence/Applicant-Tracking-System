@@ -1,10 +1,9 @@
-import React from 'react';
-
+import JobsHeader from './JobsHeader'
 const Page = () => {
     return (
-        <div>
-            jobs
-        </div>
+        <>
+           <JobsHeader />
+        </>
     );
 }
 

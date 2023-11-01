@@ -1,6 +1,6 @@
 const List = ({list}) => {
     return ( 
-        <li className="text-center inline mx-4 ">{list}</li>
+        <li className="text-center inline mx-4 cursor-pointer ">{list}</li>
      );
 }
  

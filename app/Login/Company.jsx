@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link";
+
 
 const Company = () => {
 
@@ -9,7 +11,7 @@ const Company = () => {
             <input type="text" placeholder="Company Name" required id="CName"/>
             <input type="email"  id="Cmail" required placeholder="Company Email" />
             <input type="password"  id="password" required placeholder="Password" />
-            <input type="submit" value="Continue" id="submit" className="text-white bold" />
+            <Link href='/'><input type="submit" value="Continue" id="submit" className="text-white bold" /></Link>
         </form>
     );
 }
