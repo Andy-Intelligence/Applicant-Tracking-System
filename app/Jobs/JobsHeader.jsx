@@ -1,12 +1,15 @@
+'use client'
 import Link from "next/link";
 import List from "../comps/List";
 import Search from "../comps/Search";
 import Image from "next/image";
-import profile from '../images/profile.png'
+import profile from "../images/profile.png";
 import { UserAuth } from "../context/AuthContext";
-import Sidebar from './Sidebar'
+import Sidebar from "./Sidebar";
 // photoURL
 const JobsHeader = () => {
+  const { user } = UserAuth();
+  console.log(user);
   return (
     <div className="bg-white p-2">
       <div className="flex align-center">
@@ -22,12 +25,12 @@ const JobsHeader = () => {
         </nav>
         <Search />
       </div>
-    <Image 
+      <Image
         src={profile}
         alt="profile"
         quality={100}
         className="absolute shift"
-     />
+      />
     </div>
   );
 };
