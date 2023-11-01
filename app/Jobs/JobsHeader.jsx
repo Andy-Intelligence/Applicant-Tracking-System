@@ -4,6 +4,7 @@ import Search from "../comps/Search";
 import Image from "next/image";
 import profile from '../images/profile.png'
 import { UserAuth } from "../context/AuthContext";
+import Sidebar from './Sidebar'
 // photoURL
 const JobsHeader = () => {
   return (
@@ -25,7 +26,7 @@ const JobsHeader = () => {
         src={profile}
         alt="profile"
         quality={100}
-        className="absolute"
+        className="absolute shift"
      />
     </div>
   );
