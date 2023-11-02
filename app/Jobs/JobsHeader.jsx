@@ -9,11 +9,11 @@ import Sidebar from "./Sidebar";
 // photoURL
 const JobsHeader = () => {
   const { user } = UserAuth();
-  console.log(user);
   return (
-    <div className="bg-white p-2">
+    <>
+      <div className="bg-white p-2">
       <div className="flex align-center">
-        <h1 className="font-normal text-5xl">Logo</h1>
+        <Link href='/'><h1 className="font-normal text-5xl cursor-pointer">Logo</h1></Link>
         <nav>
           <ul className="items-center mt-5 ml-10">
             <List list="Overview" />
@@ -25,13 +25,31 @@ const JobsHeader = () => {
         </nav>
         <Search />
       </div>
-      <Image
-        src={profile}
-        alt="profile"
-        quality={100}
-        className="absolute shift"
-      />
+      {!user ? (
+        <Link href="/SignUp">
+          <Image src={profile} alt="profile" quality={100} className=" shift" />
+        </Link>
+      ) : (
+        <div className="user-details">
+          <Image
+            src={user.photoURL}
+            alt="Profile Photo"
+            width={25}
+            height={20}
+            quality={100}
+            className="profiler"
+          />
+          <div className="titles">
+            <p className="userName">{user.displayName}</p>
+            <p className="userEmail">{user.email}</p>
+          </div>
+        </div>
+      )}
     </div>
+    <div>
+        <Sidebar />
+      </div>
+    </>
   );
 };
 

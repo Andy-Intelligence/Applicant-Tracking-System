@@ -1,10 +1,11 @@
 import JobsHeader from './JobsHeader'
-import JobSidebar from './JobSidebar'
+// import JobSidebar from './JobSidebar'
 const Page = () => {
+    // if(window.location.href ===)
     return (
         <>
            <JobsHeader />
-           <JobSidebar />
+           {/* <JobSidebar /> */}
         </>
     );
 }

@@ -4,13 +4,14 @@ import Image from "next/image";
 import Search from "./Search";
 import { UserAuth } from "../context/AuthContext";
 import Link from "next/link";
+import profile from "../images/profile.png";
 const Header = () => {
   const { user } = UserAuth();
 
   return (
     <header className="bg-white p-2">
       <div className="flex align-center">
-        <h1 className="font-normal text-5xl">Logo</h1>
+        <Link href='/'><h1 className="font-normal text-5xl">Logo</h1></Link>
         <nav>
           <ul className="items-center mt-5 ml-10">
             <List list="Overview" />
@@ -24,20 +25,22 @@ const Header = () => {
       </div>
       {!user ? (
         <Link href="/SignUp">
-          <button className=" button">Sign up</button>
+          <Image src={profile} alt="profile" quality={100} className="shift" />
         </Link>
       ) : (
-        <div>
+        <div className="user-details">
           <Image
             src={user.photoURL}
             alt="Profile Photo"
             width={25}
             height={20}
             quality={100}
-            className="profiler absolute"
+            className="profiler"
           />
-          <p className="userName">{user.displayName}</p>
-          <p className="userEmail">{user.email}</p>
+          <div className="titles">
+            <p className="userName">{user.displayName}</p>
+            <p className="userEmail">{user.email}</p>
+          </div>
         </div>
       )}
       {/**/}

@@ -30,7 +30,6 @@ const SignIn = () => {
         <Image
           src={Google}
           alt="Sign in with Google"
-          quality={100}
           width={20}
         />
         <p>Sign Up with Google</p>
