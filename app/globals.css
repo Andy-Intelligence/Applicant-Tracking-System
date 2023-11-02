@@ -181,3 +181,23 @@ input[type="search"]::placeholder{
   border-radius: .5rem;
   color:#dfdddd;
 }
+
+.profiler{
+  border-radius:50%;
+  right:9rem;
+  top: 1.5rem;
+}
+
+.userName{
+  font-size: .7rem;
+  position: absolute;
+  right: 4rem;
+  top: 1.2rem;
+}
+
+.userEmail{
+  font-size: .6rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+}

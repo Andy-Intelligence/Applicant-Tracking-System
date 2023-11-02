@@ -27,8 +27,18 @@ const Header = () => {
           <button className=" button">Sign up</button>
         </Link>
       ) : (
-        
-        <Image src={user.photoURL} alt="Profile Photo" width={50} height={10} />
+        <div>
+          <Image
+            src={user.photoURL}
+            alt="Profile Photo"
+            width={25}
+            height={20}
+            quality={100}
+            className="profiler absolute"
+          />
+          <p className="userName">{user.displayName}</p>
+          <p className="userEmail">{user.email}</p>
+        </div>
       )}
       {/**/}
     </header>
