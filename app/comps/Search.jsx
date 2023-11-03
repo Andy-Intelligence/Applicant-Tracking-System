@@ -2,8 +2,11 @@
 import Image from "next/image";
 import search from '../images/search.svg'
 import profile from '../images/profile.png'
-const Search = () => {
+const Search = ({handleClick}) => {
   return (
+
+
+
     <>
       <input
         type="search"
@@ -11,7 +14,7 @@ const Search = () => {
         placeholder="I am looking for..."
         className=" relative mt-3 ml-10"
       />
-      <Image src={search} width={30} className="main-image" alt="search" quality={100} />
+      <Image src={search} width={30} className="main-image" alt="search" quality={100} onClick={ handleClick} />
       
     </>
   );

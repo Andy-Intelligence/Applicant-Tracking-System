@@ -6,7 +6,7 @@ import Link from "next/link";
 const Company = () => {
 
     return (
-        <form className="width-1/2">
+        <form className="width-1/2" id="contact-form">
             <input  type="text" placeholder="Full Name" required id="fName"/>
             <input type="text" placeholder="Company Name" required id="CName"/>
             <input type="email"  id="Cmail" required placeholder="Company Email" />

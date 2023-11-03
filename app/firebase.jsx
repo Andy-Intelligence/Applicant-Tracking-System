@@ -16,3 +16,5 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+
+const contactFormDB =   firebase.database().ref('contact-form')

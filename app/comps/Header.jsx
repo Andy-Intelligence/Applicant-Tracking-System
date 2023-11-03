@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       {!user ? (
         <Link href="/SignUp">
-          <Image src={profile} alt="profile" quality={100} className="shift" />
+          <Image src={profile} alt="profile" quality={100} className="shifter" />
         </Link>
       ) : (
         <div className="user-details">

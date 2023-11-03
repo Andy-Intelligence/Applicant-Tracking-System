@@ -31,6 +31,7 @@ const SignIn = () => {
           src={Google}
           alt="Sign in with Google"
           width={20}
+          
         />
         <p>Sign Up with Google</p>
       </button>
