@@ -244,3 +244,50 @@ input[type="search"]::placeholder{
   justify-content:space-between;
 }
 
+.mainProfile{
+  padding: 5rem;
+}
+
+.mover{
+  border-radius: 50%;
+  margin-left: 14rem;
+  margin-top: 3rem;
+}
+
+.userhandler{
+  position: relative;
+  padding: 2rem;
+  height:50vh;
+  width: 50%;
+  background-color: white;
+}
+
+.camera {
+  position: absolute;
+  top: 7rem;
+  width: 5%;
+  left: 16rem;
+}
+
+.userhandler p{
+  text-align: center;
+}
+
+.paragraph{
+  margin-top:1rem;
+}
+
+.userEdit{
+  margin-top: 5rem;
+}
+
+.profile-setting-p{
+  color: gray;
+  margin-top: -1.5rem;
+  margin-left: -20rem;
+}
+
+.right-arrow{
+  margin-left: 28rem;
+  margin-top: -1.5rem;
+}

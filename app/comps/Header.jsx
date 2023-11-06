@@ -1,5 +1,6 @@
 "use client";
 import List from "./List";
+import {useState, useEffect} from 'react'
 import Image from "next/image";
 import Search from "./Search";
 import { UserAuth } from "../context/AuthContext";
@@ -7,11 +8,24 @@ import Link from "next/link";
 import profile from "../images/profile.png";
 const Header = () => {
   const { user } = UserAuth();
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1))
+      setLoading(false)
+    }
+    
+    checkAuthentication()
+
+  }, [user])
 
   return (
     <header className="bg-white p-2">
       <div className="flex align-center">
-        <Link href='/'><h1 className="font-normal text-5xl">Logo</h1></Link>
+        <Link href="/">
+          <h1 className="font-normal text-5xl">Logo</h1>
+        </Link>
         <nav>
           <ul className="items-center mt-5 ml-10">
             <List list="Overview" />
@@ -23,9 +37,14 @@ const Header = () => {
         </nav>
         <Search />
       </div>
-      {!user ? (
+      { loading ? null :!user ? (
         <Link href="/SignUp">
-          <Image src={profile} alt="profile" quality={100} className="shifter" />
+          <Image
+            src={profile}
+            alt="profile"
+            quality={100}
+            className="shifter"
+          />
         </Link>
       ) : (
         <div className="user-details">
