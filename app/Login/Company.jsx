@@ -12,6 +12,9 @@ const Company = () => {
     CName: "",
     CMail: "",
     password: "",
+    CTelephone: "",
+    cMotto: "",
+    cAddress  : "",
   });
 
   const [routing, setRouting] = useState("/Login");
@@ -24,7 +27,10 @@ const Company = () => {
       inputs.fName === "" ||
       inputs.CName === "" ||
       inputs.CMail === "" ||
-      inputs.password === ""
+      inputs.password === "" ||
+      inputs.CTelephone === "" ||
+      inputs.cMotto === "",
+      inputs.cAddress === "" 
     ) {
       alert("Please fill in all fields");
     } else {
@@ -39,11 +45,17 @@ const Company = () => {
   const handleChange = (event) => {
     const { id, value } = event.target;
     setInputs((prevInputs) => ({ ...prevInputs, [id]: value }));
-    localStorage.setItem("formInputs", JSON.stringify(inputs));
+    localStorage.setItem("fname", inputs.fName);
+    localStorage.setItem("Cname", inputs.CName);
+    localStorage.setItem("Cmail", inputs.CMail);
+    localStorage.setItem("password", inputs.password);
+    localStorage.setItem("Ctelephone", inputs.CTelephone);
+    localStorage.setItem("Cmotto", inputs.cMotto);
+    localStorage.setItem("Caddress", inputs.cAddress);
   };
 
   return (
-    <form className="width-1/2" id="contact-form">
+    <form id="contact-form">
       <input
         type="text"
         onChange={handleChange}
@@ -72,6 +84,29 @@ const Company = () => {
         required
         placeholder="Password"
       />
+
+      <input
+        type="tel"
+        id="CTelephone"
+        placeholder="Company's telephone"
+        onChange={handleChange}
+      />
+      <input
+        type="text"
+        name="motto"
+        id="cMotto"
+        placeholder="Company's motto"
+        onChange={handleChange}
+      />
+
+      <input
+        type="text"
+        id="cAddress"
+        name="address"
+        placeholder="Company Address"
+        onChange={handleChange}
+      />
+
       <Link href={routing} onClick={handleSubmit}>
         <input
           type="submit"

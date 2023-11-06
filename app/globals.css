@@ -111,12 +111,12 @@ header {
   font-weight: 500;
   line-height: 44px; 
 }
-
+/* Company form */
 form{
   max-width: 50%;
   box-sizing: border-box;
   margin-left: 41rem;
-  margin-top: -32rem;
+  margin-top: -34rem;
   padding: 3rem;
 }
 
@@ -139,6 +139,10 @@ input[type="search"]{
 input[type="search"]::placeholder{
   margin-left: 3rem;
 }
+
+/* Close of contact form */
+
+
 
 .main-image{
   position: absolute;
@@ -258,6 +262,7 @@ input[type="search"]::placeholder{
   position: relative;
   padding: 2rem;
   height:50vh;
+  margin-right: 2rem;
   width: 50%;
   background-color: white;
 }
@@ -290,4 +295,48 @@ input[type="search"]::placeholder{
 .right-arrow{
   margin-left: 28rem;
   margin-top: -1.5rem;
+}
+
+.form {
+  max-width: 50%;
+  margin-top: -20rem;
+  background-color: white;
+}
+
+
+.form input[type="submit"] {
+  background-color:green;
+}
+
+/* Settings styles */
+
+.profile-mover{
+  border-radius: 50%;
+  margin-left: 17rem;
+  margin-bottom: 2rem;
+  margin-top: 7rem;
+  width: 10%;
+}
+
+.vertical-rule{
+  background-color: #dbdbdb;
+  width: .2%;
+  margin-left: 35rem;
+  margin-top: -10rem;
+  height: 60vh;
+}
+
+.preview{
+  width: 50%;
+}
+
+.setting-form{
+  margin-top: -24rem;
+}
+
+.setting-camera{
+  position: absolute;
+  top: 13rem;
+  width: 3%;
+  left: 18rem;
 }
