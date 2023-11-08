@@ -9,7 +9,7 @@ const page = () => {
         <div className="absolute bottom-1 left-0  floater ">
           <p className="text-white  font-semibold text-2xl text-center">
             Streamline Your Recruitment Effort with{" "}
-            <span className="block">
+            <span className="block text-white">
               our Advanced Application Tracking System{" "}
             </span>
           </p>

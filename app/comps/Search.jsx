@@ -1,8 +1,17 @@
 'use-client'
 import Image from "next/image";
-import search from '../images/search.svg'
-import profile from '../images/profile.png'
-const Search = ({handleClick}) => {
+import searchImage from '../images/search-normal.svg'
+import searchNormal from '../images/searchNormal.svg';
+import { useState } from "react";
+const Search = () => {
+
+
+  const [search, setSearch] = useState(searchImage);
+
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    setSearch(searchNormal)
+  }
   return (
 
 
@@ -11,10 +20,11 @@ const Search = ({handleClick}) => {
       <input
         type="search"
         id="search"
-        placeholder="I am looking for..."
-        className=" relative mt-3 ml-10"
+        placeholder="Search..."
+        onChange={handleChange}
+        className=" moverPlaceholder relative mt-3 ml-6"
       />
-      <Image src={search} width={30} className="main-image" alt="search" quality={100} onClick={ handleClick} />
+      <Image src={search} width={30} className="main-image" alt="search" height={100} quality={100} />
       
     </>
   );

@@ -1,6 +1,6 @@
 "use client";
 import List from "./List";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Search from "./Search";
 import { UserAuth } from "../context/AuthContext";
@@ -8,43 +8,43 @@ import Link from "next/link";
 import profile from "../images/profile.png";
 const Header = () => {
   const { user } = UserAuth();
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkAuthentication = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 1))
-      setLoading(false)
-    }
-    
-    checkAuthentication()
+      await new Promise((resolve) => setTimeout(resolve, 1));
+      setLoading(false);
+    };
 
-  }, [user])
+    checkAuthentication();
+  }, [user]);
 
   return (
-    <header className="bg-white p-2">
+    <header className="header ">
       <div className="flex align-center">
         <Link href="/">
-          <h1 className="font-normal text-5xl">Logo</h1>
+          <h1 className="font-normal text-5xl">
+            L<span>o</span>g<span>o</span>
+          </h1>
         </Link>
         <nav>
-          <ul className="items-center mt-5 ml-10">
-            <List list="Overview" />
-            <List list="Mailbox" />
-            <Link href="/Jobs">
-              <List list="Jobs" />
+          <ul className="items-center mt-5 ml-10 display-inline">
+            <Link href="/">
+              <List list="Home" />
+              <div className="rectangle-5"></div>
             </Link>
+            <div className="absolute lister">
+              <List list="About" />
+              <List list="Contact Us" />
+            </div>
           </ul>
         </nav>
         <Search />
       </div>
-      { loading ? null :!user ? (
+      {loading ? null : !user ? (
         <Link href="/SignUp">
-          <Image
-            src={profile}
-            alt="profile"
-            quality={100}
-            className="shifter"
-          />
+          <button className="login">Login</button>
+          <button className="register">Sign Up</button>
         </Link>
       ) : (
         <div className="user-details">

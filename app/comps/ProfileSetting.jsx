@@ -37,6 +37,9 @@ const ProfilePart = () => {
 
     checkAuthentication();
   }, [user]);
+
+
+ 
   return (
     <>
       {loading ? null : !user ? (
