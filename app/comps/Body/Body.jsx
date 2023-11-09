@@ -5,25 +5,28 @@ import main from "@/app/images/main.svg";
 import HeaderOne from "./HeaderOne";
 import Link from "next/link";
 import HeaderTwo from "./HeaderTwo";
+import LinkedIn from "@/app/images/LinkedIn.svg";
+import JobberMan from "@/app/images/jobberman.svg";
+import Jora from "@/app/images/Jora.svg";
+import dribble from "@/app/images/dribble.svg";
 const Body = () => {
   return (
     <main>
       <div className="body ">
         <div>
-          <h2 className="p-7 text-3xl font-bold mt-7 ml-5">
+          <h2 className="p-7 text-3xl mt-7 ml-5 font-semibold">
             Unlock the Power of Modern HR with
-            <span className="block">
-              <p>( Name )</p>
-            </span>
-            <p className=" text-sm mt-5 font-normal"> 
-              <span className="block">
+            <span className="block">(Name)</span>
+            <span className="block mt-4 font-normal">
+              <p className="headerText">
+                {" "}
                 Seamless, efficient, and comprehensive HR solutions tailored{" "}
-              </span>
-              to your needs
-            </p>
+              </p>
+              <p className="headerTextTwo font-normal "> to your needs</p>
+            </span>
           </h2>
 
-          <Link href="/SignUp ">
+          <Link href="/SignUp">
             <button className="getStarted">Get Started</button>
           </Link>
           <div className="flex align-center describe">
@@ -39,7 +42,13 @@ const Body = () => {
         <Image src={main} />
       </div>
       <div className="mid-level mt-10 mb-6 p-8">
-        <h2 className=" ml-4 text-2xl">Trusted By</h2>
+        <h2 className=" ml-4 text-2xl">Trusted By:</h2>
+        <div className="trusted">
+          <Image src={JobberMan} alt="jobberman" />
+          <Image src={LinkedIn} alt="LinkedIn" />
+          <Image src={dribble} alt="dribble" />
+          <Image src={Jora} alt="jora" />
+        </div>
       </div>
       <div className=" border-b-2 p-6">
         <HeaderOne />

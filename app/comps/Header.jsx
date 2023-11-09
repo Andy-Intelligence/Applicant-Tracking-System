@@ -34,7 +34,8 @@ const Header = () => {
               <div className="rectangle-5"></div>
             </Link>
             <div className="absolute lister">
-              <List list="About" />
+              <List list="About US" />
+              <List list="Jobs" />
               <List list="Contact Us" />
             </div>
           </ul>
