@@ -29,7 +29,7 @@ const Body = () => {
           <Link href="/SignUp">
             <button className="getStarted">Get Started</button>
           </Link>
-          <div className="flex align-center describe">
+          <div className="flex mt-14 align-center describe">
             <small>Effortless Task Management</small>
             <Image src={ellipse} />
             <small>Real-time Collaboration</small>
@@ -41,7 +41,7 @@ const Body = () => {
         </div>
         <Image src={main} />
       </div>
-      <div className="mid-level mt-10 mb-6 p-8">
+      <div className="mid-level  mb-15 p-8">
         <h2 className=" ml-4 text-2xl">Trusted By:</h2>
         <div className="trusted">
           <Image src={JobberMan} alt="jobberman" />
@@ -50,12 +50,10 @@ const Body = () => {
           <Image src={Jora} alt="jora" />
         </div>
       </div>
-      <div className=" border-b-2 p-6">
+      <div className=" p-6">
         <HeaderOne />
         <HeaderTwo />
       </div>
-      <hr />
-      <p>Taiwo</p>
     </main>
   );
 };
