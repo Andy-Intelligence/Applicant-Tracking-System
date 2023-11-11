@@ -493,6 +493,7 @@ footer {
   padding: 1.5rem;
   background: #f2f1f1;
   flex-shrink: 0;
+  height: 60vh;
 }
 
 footer p {
@@ -509,6 +510,7 @@ footer input {
   margin-left: 20rem;
   margin-top: 2rem;
   background-color: #fefefe;
+  position: relative;
 }
 
 footer button {
@@ -522,19 +524,54 @@ footer button {
   line-height: normal;
 }
 
-.leftPart{
+.leftPart {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
 }
 
+.rightPart{
+  display: flex;
+  flex-direction: column;
+  margin-left: -45rem;
+  gap: 1.25rem;
+  margin-top: -14rem;
+}
+
 .footerNavCom {
   color: var(--material-theme-black, #181818);
-text-align: center;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 500;
-line-height: 1.25rem; /* 100% */
-letter-spacing: 0.00625rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 100% */
+  letter-spacing: 0.00625rem;
+  margin-top: 3rem;
+}
+
+
+
+.rightPart .footerNavCom {
+  color: var(--material-theme-black, #181818);
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 100% */
+  letter-spacing: 0.00625rem;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social p{
+  margin-left: -11rem;
+}
+
+.socials{
+  gap:1rem;
 }

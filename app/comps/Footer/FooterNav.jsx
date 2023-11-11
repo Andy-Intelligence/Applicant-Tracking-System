@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterNavTwo from './FooterNavTwo';
 
 const FooterNav = () => {
     return (
@@ -10,6 +11,7 @@ const FooterNav = () => {
                 <p>Blog</p>
                 <p>Careers</p>
             </div>
+            <FooterNavTwo />
         </div>
     );
 }
