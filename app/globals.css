@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +31,7 @@ body {
 main {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -182,6 +192,8 @@ span {
 }
 
 .trusted {
+  width:100%;
+  animation: moveLeftToRight 5s linear infinite;
   display: flex;
   gap: 3rem;
   margin-top: -2rem;
@@ -198,6 +210,14 @@ span {
   color: var(--Buttion-color, #3637ee);
   margin-left: 6rem;
   margin-top: -5rem;
+}
+
+li:hover{
+  text-decoration: underline;
+}
+
+li:active{
+  text-decoration: underline;
 }
 
 .signin h2 {
@@ -238,7 +258,7 @@ span {
 
 .company {
   position: absolute;
-  top: 7rem;
+  top: 3rem;
   left: 50rem;
 }
 
@@ -262,7 +282,7 @@ form {
   max-width: 50%;
   box-sizing: border-box;
   margin-left: 41rem;
-  margin-top: -32rem;
+  margin-top: -34rem;
   padding: 3rem;
 }
 
@@ -294,7 +314,7 @@ input[type="search"]::placeholder {
 
 .main-image {
   position: absolute;
-  left: 18.5rem;
+  left: 18.9rem;
   top: 2.5rem;
   transform: translateY(-5%);
 }
@@ -574,4 +594,10 @@ footer button {
 
 .socials{
   gap:1rem;
+}
+
+
+.jobDiv {
+  border: 1px solid red;
+  padding: 2rem 4rem;
 }

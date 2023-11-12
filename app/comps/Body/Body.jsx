@@ -44,7 +44,7 @@ const Body = () => {
       <div className="mid-level  mb-15 p-8">
         <h2 className=" ml-4 text-2xl">Trusted By:</h2>
         <div className="trusted">
-          <Image src={JobberMan} alt="jobberman" />
+          <Image src={JobberMan} className="ml-9" alt="jobberman" />
           <Image src={LinkedIn} alt="LinkedIn" />
           <Image src={dribble} alt="dribble" />
           <Image src={Jora} alt="jora" />

@@ -31,7 +31,7 @@ const Header = () => {
           <ul className="items-center mt-5 ml-10 display-inline">
             <Link href="/">
               <List list="Home" />
-              <div className="rectangle-5"></div>
+              
             </Link>
             <div className="absolute lister">
               <List list="About US" />
