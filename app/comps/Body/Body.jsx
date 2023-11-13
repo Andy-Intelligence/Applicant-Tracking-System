@@ -31,15 +31,15 @@ const Body = () => {
           </Link>
           <div className="flex mt-14 align-center describe">
             <small>Effortless Task Management</small>
-            <Image src={ellipse} />
+            <Image src={ellipse} alt="dot" />
             <small>Real-time Collaboration</small>
-            <Image src={ellipse} />
+            <Image src={ellipse} alt="dot"/>
             <small>Intuitive User Interface</small>
-            <Image src={ellipse} />
+            <Image src={ellipse} alt="dot"/>
             <small>Seamless Integration</small>
           </div>
         </div>
-        <Image src={main} />
+        <Image src={main}  alt="main-image"/>
       </div>
       <div className="mid-level  mb-15 p-8">
         <h2 className=" ml-4 text-2xl">Trusted By:</h2>

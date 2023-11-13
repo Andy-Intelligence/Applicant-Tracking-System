@@ -1,11 +1,10 @@
 const ProfileDetails = () => {
-
-
     return (
+        
         <div className="form-container">
             <form className="form">
                 <label htmlFor="user-company-name">Company Name:</label>
-                <input type="text" value={localStorage.getItem('Cname')}  id="user-company-name" />
+                <input type="text" value={localStorage.getItem('Cname') }  id="user-company-name" />
 
                 <label htmlFor="email">Email</label>
                 <input type="email" value={localStorage.getItem('Cmail')}  id="email" />
