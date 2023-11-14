@@ -1,4 +1,5 @@
 'use client'
+import Footer from "../comps/Footer/Footer";
 import Nav from "../comps/Nav";
 import ListOfJobs from "./ListOfJobs";
 const Page = () => {
@@ -41,6 +42,7 @@ const Page = () => {
           }}
         />
       </div>
+      <Footer />
     </div>
   );
 };

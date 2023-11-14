@@ -5,6 +5,7 @@ import Image from "next/image";
 import Search from "./Search";
 import { UserAuth } from "../context/AuthContext";
 import Link from "next/link";
+import mainLogo from "../images/Logo.png";
 import profile from "../images/profile.png";
 const Header = () => {
   const { user } = UserAuth();
@@ -24,18 +25,23 @@ const Header = () => {
       <div className="flex align-center">
         <Link href="/">
           <h1 className="font-normal text-5xl">
-            L<span>o</span>g<span>o</span>
+            <Image src={mainLogo} alt="Main-logo" className="semiLogo" />
           </h1>
         </Link>
         <nav>
           <ul className="items-center mt-5 ml-10 display-inline">
-            <Link href="/">
-              <List list="Home" />
-              
-            </Link>
+            <span className="home">
+              <Link href="/">
+                <List list="Home" />
+              </Link>
+            </span>
             <div className="absolute lister">
-              <List list="About US" />
-              <List list="Jobs" />
+              <Link href="/About">
+                <List list="About US" />
+              </Link>
+              <Link href="/Jobs">
+                <List list="Jobs" />
+              </Link>
               <List list="Contact Us" />
             </div>
           </ul>
@@ -48,20 +54,22 @@ const Header = () => {
           <button className="register">Sign Up</button>
         </Link>
       ) : (
-        <div className="user-details">
-          <Image
-            src={user.photoURL}
-            alt="Profile Photo"
-            width={25}
-            height={20}
-            quality={100}
-            className="profiler"
-          />
-          <div className="titles">
-            <p className="userName">{user.displayName}</p>
-            <p className="userEmail">{user.email}</p>
+        <Link href='/Candidate'>
+          <div className="user-details cursor-pointer">
+            <Image
+              src={user.photoURL}
+              alt="Profile Photo"
+              width={25}
+              height={20}
+              quality={100}
+              className="profiler"
+            />
+            <div className="titles">
+              <p className="userName">{user.displayName}</p>
+              <p className="userEmail">{user.email}</p>
+            </div>
           </div>
-        </div>
+        </Link>
       )}
       {/**/}
     </header>

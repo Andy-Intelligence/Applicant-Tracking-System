@@ -16,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   max-width: 1440px;
   margin-left: auto;
@@ -44,6 +45,23 @@ header {
   display: grid;
   grid-template-columns: auto 1fr;
   margin-top: 4rem;
+}
+
+.semiLogo{
+  max-width: 8%;
+  top: 1.5rem;
+  border-radius: 1rem;
+  position: absolute;
+}
+
+.footerLogo {
+  max-width: 8%;
+  border-radius: 1rem;
+}
+
+.follow{
+  color: black;
+  margin-right: 6rem;
 }
 
 .mid-level {
@@ -303,6 +321,13 @@ input[type="search"] {
   padding: 0.5rem 3rem;
   border-radius: 0.2rem;
   margin-top: 1.2rem;
+  margin-left: 13rem;
+}
+
+.home{
+  left: 12rem;
+  top: 2.5rem;
+  position: absolute;
 }
 
 input[type="search"]::placeholder {
@@ -584,10 +609,16 @@ footer button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: 1rem;
 }
 
 .social p {
   margin-left: -11rem;
+}
+
+.social img{
+  border-radius: 50%;
+  width: 20%;
 }
 
 .socials {
@@ -648,4 +679,68 @@ footer button {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1rem;
+}
+
+.about-p{
+  margin-top: 1rem;
+  font-size: .8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainArea{
+  margin-top: 4rem;
+  display:grid;
+  grid-template-columns:50% 50%;
+}
+
+.detailsTwo{
+  margin-top: 8rem;
+}
+
+.detailsTwo h2{
+  text-align: center;
+}
+
+.detailsTwo p{
+  width: 100%;
+  font-size: .7rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mainAreaTwo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 9rem;
+}
+
+.sectionPart {
+  margin-top: 10rem;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+}
+
+.sectionOne p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: .7rem;
+  text-align: center;
+}
+
+.sectionOne img {
+  margin-left: 8rem;
+}
+
+.message {
+  margin-top:10rem;
+}
+
+.message p {
+  margin-top: 1rem;
+  color: #3637ee;
 }

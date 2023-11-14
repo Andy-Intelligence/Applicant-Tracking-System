@@ -1,9 +1,11 @@
 import Link from "next/link";
+import mainLogo from "@/app/images/Logo.png";
+import Image from "next/image";
 const Logo = () => {
   return (
     <Link href="/">
       <h1 className="font-normal mt-[-3rem] text-5xl">
-        L<span>o</span>g<span>o</span>
+      <Image src={mainLogo} alt="Main-logo" className="footerLogo" />
       </h1>
     </Link>
   );
