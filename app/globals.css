@@ -47,7 +47,7 @@ header {
   margin-top: 4rem;
 }
 
-.semiLogo{
+.semiLogo {
   max-width: 8%;
   top: 1.5rem;
   border-radius: 1rem;
@@ -59,7 +59,7 @@ header {
   border-radius: 1rem;
 }
 
-.follow{
+.follow {
   color: black;
   margin-right: 6rem;
 }
@@ -324,7 +324,7 @@ input[type="search"] {
   margin-left: 13rem;
 }
 
-.home{
+.home {
   left: 12rem;
   top: 2.5rem;
   position: absolute;
@@ -616,7 +616,7 @@ footer button {
   margin-left: -11rem;
 }
 
-.social img{
+.social img {
   border-radius: 50%;
   width: 20%;
 }
@@ -626,7 +626,7 @@ footer button {
 }
 
 .jobDiv {
-  border: 1px solid #F8F8F8;
+  border: 1px solid #f8f8f8;
   padding: 2rem 4rem;
   width: 100%;
   box-sizing: border-box;
@@ -665,7 +665,7 @@ footer button {
 .ApplyButton {
   height: 2.8125rem;
   width: 100%;
-  color: var(--Text-color-Active-white, #F9F9F9);
+  color: var(--Text-color-Active-white, #f9f9f9);
   margin-top: 2rem;
   padding: 0.625rem 1.5rem;
   justify-content: center;
@@ -675,36 +675,36 @@ footer button {
   background: var(--Primay-color-Active-green, #538e53);
 }
 
-.components{
+.components {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1rem;
 }
 
-.about-p{
+.about-p {
   margin-top: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.mainArea{
+.mainArea {
   margin-top: 4rem;
-  display:grid;
-  grid-template-columns:50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.detailsTwo{
+.detailsTwo {
   margin-top: 8rem;
 }
 
-.detailsTwo h2{
+.detailsTwo h2 {
   text-align: center;
 }
 
-.detailsTwo p{
+.detailsTwo p {
   width: 100%;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -725,10 +725,10 @@ footer button {
   margin-top: 4rem;
 }
 
-.sectionOne p{
+.sectionOne p {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
@@ -737,7 +737,7 @@ footer button {
 }
 
 .message {
-  margin-top:10rem;
+  margin-top: 10rem;
 }
 
 .message p {
@@ -745,6 +745,7 @@ footer button {
   color: #3637ee;
 }
 
-.contact img{
-  margin-top:5rem;
+.contact img {
+  margin-top: 5rem;
 }
+
